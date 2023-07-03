@@ -1,0 +1,664 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Jeff Green is a web developer working for Crown Lane Creative in Richmond, VA."><title>Jeff Green - Web developer in Richmond, VA - Specializing in WordPress and Shopify websites</title><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="manifest" href="/site.webmanifest"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000"><meta name="msapplication-TileColor" content="#24ff2d"><meta name="theme-color" content="#ffffff"><link rel="preconnect" href="https://www.googletagmanager.com"><link rel="preconnect" href="https://www.google-analytics.com"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,500;1,800&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,500;1,800&display=swap"><style>/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+========================================================================== */
+
+/**
+* Remove the margin in all browsers.
+*/
+
+body {
+  margin: 0;
+}
+
+/**
+* Render the `main` element consistently in IE.
+*/
+
+main {
+  display: block;
+}
+
+/**
+* Correct the font size and margin on `h1` elements within `section` and
+* `article` contexts in Chrome, Firefox, and Safari.
+*/
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+========================================================================== */
+
+/**
+* 1. Add the correct box sizing in Firefox.
+* 2. Show the overflow in Edge and IE.
+*/
+
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+* 1. Correct the inheritance and scaling of font size in all browsers.
+* 2. Correct the odd `em` font sizing in all browsers.
+*/
+
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+========================================================================== */
+
+/**
+* Remove the gray background on active links in IE 10.
+*/
+
+a {
+  background-color: transparent;
+}
+
+/**
+* 1. Remove the bottom border in Chrome 57-
+* 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+*/
+
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+* Add the correct font weight in Chrome, Edge, and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+* 1. Correct the inheritance and scaling of font size in all browsers.
+* 2. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+* Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/**
+* Prevent `sub` and `sup` elements from affecting the line height in
+* all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+========================================================================== */
+
+/**
+* Remove the border on images inside links in IE 10.
+*/
+
+img {
+  border-style: none;
+}
+
+/* Forms
+========================================================================== */
+
+/**
+* 1. Change the font styles in all browsers.
+* 2. Remove the margin in Firefox and Safari.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+* Show the overflow in IE.
+* 1. Show the overflow in Edge.
+*/
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+* Remove the inheritance of text transform in Edge, Firefox, and IE.
+* 1. Remove the inheritance of text transform in Firefox.
+*/
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+* Correct the inability to style clickable types in iOS and Safari.
+*/
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+* Remove the inner border and padding in Firefox.
+*/
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+* Restore the focus styles unset by the previous rule.
+*/
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+* Correct the padding in Firefox.
+*/
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+* 1. Correct the text wrapping in Edge and IE.
+* 2. Correct the color inheritance from `fieldset` elements in IE.
+* 3. Remove the padding so developers are not caught out when they zero out
+*    `fieldset` elements in all browsers.
+*/
+
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+* Add the correct vertical alignment in Chrome, Firefox, and Opera.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+* Remove the default vertical scrollbar in IE 10+.
+*/
+
+textarea {
+  overflow: auto;
+}
+
+/**
+* 1. Add the correct box sizing in IE 10.
+* 2. Remove the padding in IE 10.
+*/
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+* Correct the cursor style of increment and decrement buttons in Chrome.
+*/
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+* 1. Correct the odd appearance in Chrome and Safari.
+* 2. Correct the outline style in Safari.
+*/
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+* Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+* 1. Correct the inability to style clickable types in iOS and Safari.
+* 2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+========================================================================== */
+
+/*
+* Add the correct display in Edge, IE 10+, and Firefox.
+*/
+
+details {
+  display: block;
+}
+
+/*
+* Add the correct display in all browsers.
+*/
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+========================================================================== */
+
+/**
+* Add the correct display in IE 10+.
+*/
+
+template {
+  display: none;
+}
+
+/**
+* Add the correct display in IE 10.
+*/
+
+[hidden] {
+  display: none;
+}
+
+/* Page styles */
+
+:root {
+  --green-dark: #007c05;
+  --green-neon: #24ff2d;
+  --global-dark: #1e1e1e;
+  --global-light: #ffffff;
+}
+
+body {
+  color: var(--global-dark);
+  padding: 2.5rem 1.6rem 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 2.5rem 2rem 1rem;
+    display: grid;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+    align-content: center;
+    justify-content: space-evenly;
+    font-size: 18px;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-family: "JetBrains Mono", monospace, "Segoe UI", "Roboto", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  font-style: italic;
+  line-height: 1.5;
+  font-weight: 800;
+}
+
+h1 {
+  margin: 0 0 2rem 0;
+  font-size: 2.5rem;
+}
+
+h2,
+h3 {
+  margin: 0 0 1rem 0;
+}
+
+h2 {
+  color: var(--global-dark);
+  padding: 0.25rem 1rem 0.35rem 1rem;
+  width: auto;
+  display: inline-block;
+  border-left: 5px solid var(--green-neon);
+}
+
+@media (min-width: 768px) {
+  h3 {
+    margin: 0 0 2rem;
+  }
+}
+
+a {
+  color: var(--global-dark);
+}
+
+a,
+button {
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  a,
+  button {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+p {
+  margin: 0 0 1rem 0;
+  line-height: 1.6;
+}
+
+header,
+main,
+section,
+footer {
+  display: block;
+}
+
+@media (min-width: 1000px) {
+  header,
+  main,
+  footer {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  header,
+  main,
+  footer {
+    max-width: 960px;
+  }
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+section {
+  display: block;
+  margin-bottom: 2.5rem;
+}
+
+/* About me */
+.about h2 {
+  margin-bottom: 1rem;
+}
+
+.about p {
+  margin-bottom: 0.6rem;
+}
+
+.about p:last-of-type {
+  margin-bottom: 2rem;
+}
+
+.about p > a:hover,
+.about p > a:focus {
+  background-color: var(--green-neon);
+  color: var(--global-dark);
+}
+
+.about-links {
+  list-style: none;
+  margin: 0 0 3rem 0;
+  text-align: left;
+  padding: 0;
+}
+
+.about-links li {
+  display: inline-block;
+  margin-right: 0.7rem;
+}
+
+.about-links a {
+  background-color: var(--global-light);
+  color: var(--global-dark);
+  border: 2px solid var(--global-dark);
+  padding: 0.6rem 0.6rem;
+  text-decoration: none;
+  display: block;
+  font-family: "JetBrains Mono", monospace, "Segoe UI", "Roboto", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.about-links a:hover,
+.about-links a:active,
+.about-links a:focus {
+  color: var(--global-dark);
+  background-color: var(--green-neon);
+}
+
+/* Projects */
+.project {
+  margin-bottom: 1.5rem;
+}
+
+.project-title {
+  margin-bottom: 0.25rem;
+}
+
+.project-title a {
+  font-weight: 500;
+}
+
+.project-title a:hover {
+  color: var(--global-dark);
+  background-color: var(--green-neon);
+}
+
+.project-description {
+  padding-left: 1.4rem;
+}
+
+.project-tags {
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 0 0 0;
+}
+
+.project-tags > li {
+  display: inline-block;
+  margin: 0 0.7rem 0.7rem 0;
+}
+
+.project-tags > li > a {
+  background-color: #24ff2d12;
+  color: var(--global-dark);
+  border: 1px solid #0074053b;
+  padding: 0.6rem 0.6rem;
+  text-decoration: none;
+  display: block;
+  font-family: "JetBrains Mono", monospace, "Segoe UI", "Roboto", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.project-tags a:hover,
+.project-tags a:active,
+.project-tags a:focus {
+  color: var(--global-dark);
+  background-color: var(--green-neon);
+}
+
+/* Footer */
+footer {
+  grid-area: footer;
+  padding-top: 2rem;
+}
+
+footer p {
+  font-style: italic;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: var(--global-light);
+    background-color: var(--global-dark);
+  }
+
+  a {
+    color: var(--global-light);
+  }
+
+  h2 {
+    color: var(--global-light);
+  }
+
+  .about-links a {
+    background-color: var(--global-dark);
+    color: var(--global-light);
+    border: 2px solid var(--global-light);
+  }
+
+  .about-links a:hover,
+  .about-links a:active,
+  .about-links a:focus {
+    background-color: var(--green-neon);
+    color: var(--global-dark);
+    border: 2px solid var(--green-neon);
+  }
+
+  .project-tags > li > a {
+    background-color: var(--global-light);
+    color: var(--global-dark);
+    border: 1px solid var(--global-light);
+  }
+
+  .project-tags a:hover,
+  .project-tags a:active,
+  .project-tags a:focus {
+    color: var(--global-dark);
+    background-color: var(--green-neon);
+    border: 1px solid var(--green-neon);
+  }
+}</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-JF4P3WLP32"></script><script>window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JF4P3WLP32');</script></head><body><header><h1>Jeff Green</h1></header><main><section class="about"><h2>About me</h2><p>I&rsquo;m a web developer at <a href="https://www.crownlanecreative.com/">Crown Lane Creative</a>&nbsp;in Richmond, VA.</p><p>Questions? <a href="https://www.linkedin.com/in/jeffgreenweb/">Message me on LinkedIn</a>&nbsp;or <a href="https://www.crownlanecreative.com/contact-us/">submit your project details on the Crown Lane contact form</a>.</p><ul class="about-links"><li><a href="https://www.linkedin.com/in/jeffgreenweb/">LinkedIn</a></li><li><a href="https://github.com/jeffgreendesign">GitHub</a></li></ul></section><section class="projects"><h2>Projects</h2><div class="project-wrap"><div class="project"><h3 class="project-title"><a href="https://neighborrva.com/">Neighbor</a></h3><ul class="project-tags"><li><a href="https://wordpress.org/">WordPress</a></li><li><a href="https://wordpress.org/themes/hello-elementor/">Hello Elementor</a></li><li><a href="https://wordpress.org/plugins/elementor/">Elementor Pro</a></li><li><a href="https://wpengine.com/">WP Engine</a></li></ul></div><div class="project"><h3 class="project-title"><a href="https://edatasupport.com/">eData Support</a></h3><ul class="project-tags"><li><a href="https://wordpress.org/">WordPress</a></li><li><a href="https://wordpress.org/themes/hello-elementor/">Hello Elementor</a></li><li><a href="https://wordpress.org/plugins/elementor/">Elementor Pro</a></li><li><a href="https://www.gravityforms.com/">Gravity Forms</a></li><li><a href="https://www.godaddy.com/">GoDaddy</a></li></ul></div><div class="project"><h3 class="project-title"><a href="https://usenergymanagement.com/">U.S. Energy Management</a></h3><ul class="project-tags"><li><a href="https://wordpress.org/">WordPress</a></li><li><a href="https://wordpress.org/themes/astra/">Astra</a></li><li><a href="https://wordpress.org/plugins/elementor/">Elementor Pro</a></li><li><a href="https://www.gravityforms.com/">Gravity Forms</a></li><li><a href="https://www.godaddy.com/">GoDaddy</a></li></ul></div><div class="project"><h3 class="project-title"><a href="https://cscleanair.com/">CS Air & Environmental</a></h3><ul class="project-tags"><li><a href="https://wordpress.org/">WordPress</a></li><li><a href="https://wordpress.org/themes/astra/">Astra</a></li><li><a href="https://wordpress.org/plugins/elementor/">Elementor Pro</a></li><li><a href="https://www.gravityforms.com/">Gravity Forms</a></li><li><a href="https://www.godaddy.com/">GoDaddy</a></li></ul></div><div class="project"><h3 class="project-title"><a href="https://grovetalentgroup.com/">Grove Talent Group</a></h3><ul class="project-tags"><li><a href="https://wordpress.org/">WordPress</a></li><li><a href="https://wordpress.org/themes/astra/">Astra</a></li><li><a href="https://wordpress.org/plugins/elementor/">Elementor Pro</a></li><li><a href="https://www.gravityforms.com/">Gravity Forms</a></li><li><a href="https://wpengine.com/">WP Engine</a></li></ul></div><div class="project"><h3 class="project-title"><a href="https://magazine.vcu.edu/">VCU Magazine</a></h3><div class="project-description"><p>Front end web development for the VCU Magazine, produced by VCU Development and Alumni Relations.</p></div></div><div class="project"><h3 class="project-title"><a href="https://www.alumnicharity.org/">Alumni Charity Challenge</a></h3><div class="project-description"><p>Web design and development for the VCU RVA GOLD Alumni Charity Challenge, using the Bootstrap framework.</p></div></div><div class="project"><h3 class="project-title"><a href="https://bpm.pharmacy.vcu.edu/">Center for Biomarker Research &amp; Precision Medicine</a></h3><div class="project-description"><p>Front end web development for a VCU School of Pharmacy department website on the Terminalfour (T4) CMS.</p></div></div><div class="project"><h3 class="project-title"><a href="https://www.support.vcu.edu/give">VCU Giving</a></h3><div class="project-description"><p>Front end web development with the Bootstrap framework. Ongoing maintenance and upgrades.</p></div></div></div></section></main><footer><p>&copy; 2023 <a href="https://www.linkedin.com/in/jeffgreenweb/">Jeff Green</a>. Made with <a href="https://www.11ty.dev/">Eleventy</a>.</p></footer></body></html>
