@@ -535,6 +535,12 @@ section {
   margin-right: 0.7rem;
 }
 
+@media (max-width: 767px) {
+  .about-links li {
+    margin-bottom: 0.7rem;
+  }
+}
+
 .about-links a {
   background-color: var(--global-light);
   color: var(--global-dark);
