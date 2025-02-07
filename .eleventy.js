@@ -2,12 +2,6 @@ const htmlmin = require("html-minifier");
 const CleanCSS = require("clean-css");
 
 module.exports = function(eleventyConfig) {
-  
-  eleventyConfig.addPassthroughCopy("bundle.css");
-
-  eleventyConfig.addFilter("cssmin", function(code) {
-    return new CleanCSS({}).minify(code).styles;
-  });
 
   eleventyConfig.addTransform("htmlmin", function(content) {
     // Prior to Eleventy 2.0: use this.outputPath instead
@@ -19,7 +13,23 @@ module.exports = function(eleventyConfig) {
       });
       return minified;
     }
-
     return content;
   });
+  
+  eleventyConfig.addFilter("cssmin", function(code) {
+    return new CleanCSS({}).minify(code).styles;
+  });
+
+  // Add the css shortcode
+  eleventyConfig.addPairedShortcode("css", function(content) {
+    return new CleanCSS({}).minify(content).styles;
+  });
+
+  return {
+    dir: {
+      input: "src",
+      output: "_site",
+      includes: "_includes"
+    }
+  };
 };
