@@ -620,6 +620,13 @@ footer p {
   font-style: italic;
 }
 
+footer p a:hover,
+footer p a:active,
+footer p a:focus {
+  color: var(--global-dark);
+  background-color: var(--green-neon);
+}
+
 @media (prefers-color-scheme: dark) {
   html,
   body {
