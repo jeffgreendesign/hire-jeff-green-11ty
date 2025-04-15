@@ -128,3 +128,6 @@ dist
 
 # Local files
 .DS_Store
+
+# SpecStory
+.specstory/
