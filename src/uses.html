@@ -1,98 +1,44 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="What Jeff Green uses for development, productivity, and daily work."
-    />
-    <meta
-      name="theme-color"
-      content="#ffffff"
-      media="(prefers-color-scheme: light)"
-    />
-    <meta
-      name="theme-color"
-      content="#1e1e1e"
-      media="(prefers-color-scheme: dark)"
-    />
-    <title>Uses - Jeff Green</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000" />
-    <meta name="msapplication-TileColor" content="#24ff2d" />
-    <meta name="theme-color" content="#ffffff" />
-    <link rel="preconnect" href="https://www.google-analytics.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="preload"
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,500;1,800&display=swap"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,500;1,800&display=swap"
-      />
-    </noscript>
-    <style>
-      {%- capture css %}
-        {% include "bundle.css" %}
-      {% endcapture -%}
-      {{ css | cssmin }}
-    </style>
-  </head>
-  <body>
-    {% include '_includes/header.html' %}
-    <main>
-      <section class="uses">
-        <h2>What I Use</h2>
-        <p>
-          Here's a list of the tools, software, and hardware I use for my work.
-        </p>
+---
+layout: base.njk
+title: Uses
+description: What Jeff Green uses for development, productivity, and daily work.
+---
 
-        <h3>Hardware</h3>
-        <ul>
-          <li>MacBook Pro (M1 Pro, 2021)</li>
-          <li>Dell U2720Q 27" 4K Monitor</li>
-          <li>Keychron K2 Mechanical Keyboard</li>
-          <li>Logitech MX Master 3 Mouse</li>
-        </ul>
+<section class="uses">
+  <h2>What I Use</h2>
+  <p>Here's a list of the tools, software, and hardware I use for my work.</p>
 
-        <h3>Software</h3>
-        <ul>
-          <li>VS Code - Primary code editor</li>
-          <li>iTerm2 - Terminal</li>
-          <li>Chrome - Primary browser</li>
-          <li>Figma - Design work</li>
-          <li>GitHub Desktop - Git client</li>
-        </ul>
+  <h3>Hardware</h3>
+  <ul>
+    <li>MacBook Pro (M1 Pro, 2021)</li>
+    <li>Dell U2720Q 27" 4K Monitor</li>
+    <li>Keychron K2 Mechanical Keyboard</li>
+    <li>Logitech MX Master 3 Mouse</li>
+  </ul>
 
-        <h3>Development Tools</h3>
-        <ul>
-          <li>Node.js & npm</li>
-          <li>Vue.js</li>
-          <li>Shopify CLI</li>
-          <li>Docker</li>
-          <li>Git</li>
-        </ul>
+  <h3>Software</h3>
+  <ul>
+    <li>VS Code - Primary code editor</li>
+    <li>iTerm2 - Terminal</li>
+    <li>Chrome - Primary browser</li>
+    <li>Figma - Design work</li>
+    <li>GitHub Desktop - Git client</li>
+  </ul>
 
-        <h3>Productivity</h3>
-        <ul>
-          <li>Notion - Note taking and project management</li>
-          <li>Slack - Team communication</li>
-          <li>1Password - Password management</li>
-          <li>Spotify - Music while coding</li>
-        </ul>
-      </section>
-    </main>
+  <h3>Development Tools</h3>
+  <ul>
+    <li>Node.js & npm</li>
+    <li>Vue.js</li>
+    <li>Shopify CLI</li>
+    <li>Docker</li>
+    <li>Git</li>
+  </ul>
 
-    {% include '_includes/footer.html' %}
-  </body>
-</html>
+  <h3>Productivity</h3>
+  <ul>
+    <li>Notion - Note taking and project management</li>
+    <li>Slack - Team communication</li>
+    <li>1Password - Password management</li>
+    <li>Spotify - Music while coding</li>
+  </ul>
+</section>

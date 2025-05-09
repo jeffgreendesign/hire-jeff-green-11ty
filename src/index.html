@@ -1,277 +1,258 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Jeff Green is a web developer in NYC working in JavaScript, Vue.js, Liquid, HTML, CSS, and PHP."
-    />
-    <meta
-      name="theme-color"
-      content="#ffffff"
-      media="(prefers-color-scheme: light)"
-    />
-    <meta
-      name="theme-color"
-      content="#1e1e1e"
-      media="(prefers-color-scheme: dark)"
-    />
-    <title>Jeff Green - NYC Frontend Developer</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000" />
-    <meta name="msapplication-TileColor" content="#24ff2d" />
-    <meta name="theme-color" content="#ffffff" />
-    <link rel="preconnect" href="https://www.google-analytics.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="preload"
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,500;1,800&display=swap"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,500;1,800&display=swap"
-      />
-    </noscript>
-    <style>
-      {%- capture css %}
-        {% include "bundle.css" %}
-      {% endcapture -%}
-      {{ css | cssmin }}
-    </style>
-  </head>
-  <body>
-    {% include '_includes/header.html' %}
-    <main>
-      <section class="about">
-        <h2>About me</h2>
+---
+layout: base.njk
+title: Jeff Green - NYC Frontend Developer
+description: Jeff Green is a web developer in NYC working in JavaScript, Vue.js, Liquid, HTML, CSS, and PHP.
+---
+
+<section class="about">
+  <h2>About me</h2>
+  <p>
+    I&rsquo;m a frontend developer in NYC. Currently working as a Shopify Plus
+    Developer for <a href="https://corporate.authentic.com/">ABG</a>.
+  </p>
+  <p>
+    Questions?
+    <a href="mailto:contact@hirejeffgreen.com">Email me!</a>.
+  </p>
+  <ul class="about-links">
+    <li>
+      <a
+        href="https://www.linkedin.com/in/jeffgreenweb/"
+        aria-label="View my LinkedIn profile"
+        >LinkedIn</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://github.com/jeffgreendesign"
+        aria-label="View my GitHub (Personal)"
+        >GitHub (Personal)</a
+      >
+    </li>
+    <li>
+      <a href="https://github.com/jgreenabg" aria-label="View my GitHub (Work)"
+        >GitHub (Work)</a
+      >
+    </li>
+  </ul>
+</section>
+
+<section class="projects">
+  <h2>Current Projects</h2>
+  <p>
+    Shopify theme development for the Authentic Brands Group global theme
+    framework.
+  </p>
+  <div class="project-wrap">
+    <div class="project">
+      <h3 class="project-title">
+        <a href="https://www.reebok.com/">Reebok</a>,
+        <a href="https://www.champion.com/">Champion</a>,
+        <a href="https://www.vincecamuto.com/">Vince Camuto</a>,
+        <a href="https://juicycouture.com/">Juicy Couture</a>,
+        <a href="https://www.dcshoes.com/">DC Shoes</a>,
+        <a href="https://www.fredericks.com/">Frederick&rsquo;s of Hollywood</a>
+      </h3>
+      <ul class="project-tags">
+        <li><a href="https://vuejs.org/">Vue.js</a></li>
+        <li><a href="https://nodejs.org/en">Node.js</a></li>
+        <li><a href="https://www.shopify.com/">Shopify</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="projects">
+  <h2>Past Projects</h2>
+  <div class="project-wrap">
+    <div class="project">
+      <h3 class="project-title">
+        <a href="https://www.newmarketasphalt.com/">New Market Asphalt Corp</a>,
+        <a href="https://fdmsafetyservices.com/">FDM Safety Services</a>,
+        <a href="https://edatasupport.com/">eData Support</a>,
+        <a href="https://usenergymanagement.com/">U.S. Energy Management</a>,
+        <a href="https://grovetalentgroup.com/">Grove Talent Group</a>
+      </h3>
+
+      <ul class="project-tags">
+        <li><a href="https://wordpress.org/">WordPress</a></li>
+        <li>
+          <a href="https://wordpress.org/themes/hello-elementor/"
+            >Hello Elementor</a
+          >
+        </li>
+        <li><a href="https://wordpress.org/themes/astra/">Astra</a></li>
+        <li>
+          <a href="https://wordpress.org/plugins/elementor/">Elementor Pro</a>
+        </li>
+        <li><a href="https://www.gravityforms.com/">Gravity Forms</a></li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3 class="project-title">
+        <a href="https://magazine.vcu.edu/">VCU Magazine</a>
+      </h3>
+      <div class="project-description">
         <p>
-          I&rsquo;m a frontend developer in NYC. Currently working as a Shopify
-          Plus Developer for <a href="https://corporate.authentic.com/">ABG</a>.
+          Frontend web development for the VCU Magazine, produced by VCU
+          Development and Alumni Relations.
         </p>
+      </div>
+    </div>
+
+    <div class="project">
+      <h3 class="project-title">
+        <a href="https://www.alumnicharity.org/">Alumni Charity Challenge</a>
+      </h3>
+      <div class="project-description">
         <p>
-          Questions?
-          <a href="mailto:contact@hirejeffgreen.com">Email me!</a>.
+          Web design and development for the VCU RVA GOLD Alumni Charity
+          Challenge, using the Bootstrap framework.
         </p>
-        <ul class="about-links">
-          <li>
-            <a
-              href="https://www.linkedin.com/in/jeffgreenweb/"
-              aria-label="View my LinkedIn profile"
-              >LinkedIn</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://github.com/jeffgreendesign"
-              aria-label="View my GitHub (Personal)"
-              >GitHub (Personal)</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://github.com/jgreenabg"
-              aria-label="View my GitHub (Work)"
-              >GitHub (Work)</a
-            >
-          </li>
-        </ul>
-      </section>
+      </div>
+    </div>
 
-      <section class="projects">
-        <h2>Current Projects</h2>
+    <div class="project">
+      <h3 class="project-title">
+        <a href="https://bpm.pharmacy.vcu.edu/"
+          >Center for Biomarker Research &amp; Precision Medicine</a
+        >
+      </h3>
+      <div class="project-description">
         <p>
-          Shopify theme development for the Authentic Brands Group global theme
-          framework.
+          Frontend web development for a VCU School of Pharmacy department
+          website on the Terminalfour (T4) CMS.
         </p>
-        <div class="project-wrap">
-          <div class="project">
-            <h3 class="project-title">
-              <a href="https://www.reebok.com/">Reebok</a>,
-              <a href="https://www.champion.com/">Champion</a>,
-              <a href="https://www.vincecamuto.com/">Vince Camuto</a>,
-              <a href="https://juicycouture.com/">Juicy Couture</a>,
-              <a href="https://www.dcshoes.com/">DC Shoes</a>,
-              <a href="https://www.fredericks.com/"
-                >Frederick&rsquo;s of Hollywood</a
-              >
-            </h3>
-            <ul class="project-tags">
-              <li><a href="https://vuejs.org/">Vue.js</a></li>
-              <li><a href="https://nodejs.org/en">Node.js</a></li>
-              <li><a href="https://www.shopify.com/">Shopify</a></li>
-            </ul>
-          </div>
-        </div>
-      </section>
+      </div>
+    </div>
 
-      <section class="projects">
-        <h2>Past Projects</h2>
-        <div class="project-wrap">
-          <div class="project">
-            <h3 class="project-title">
-              <a href="https://www.newmarketasphalt.com/"
-                >New Market Asphalt Corp</a
-              >,
-              <a href="https://fdmsafetyservices.com/">FDM Safety Services</a>,
-              <a href="https://edatasupport.com/">eData Support</a>,
-              <a href="https://usenergymanagement.com/"
-                >U.S. Energy Management</a
-              >,
-              <a href="https://grovetalentgroup.com/">Grove Talent Group</a>
-            </h3>
+    <div class="project">
+      <h3 class="project-title">
+        <a href="https://www.support.vcu.edu/give">VCU Giving</a>
+      </h3>
+      <div class="project-description">
+        <p>
+          Frontend web development with the Bootstrap framework. Ongoing
+          maintenance and upgrades.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
-            <ul class="project-tags">
-              <li><a href="https://wordpress.org/">WordPress</a></li>
-              <li>
-                <a href="https://wordpress.org/themes/hello-elementor/"
-                  >Hello Elementor</a
-                >
-              </li>
-              <li><a href="https://wordpress.org/themes/astra/">Astra</a></li>
-              <li>
-                <a href="https://wordpress.org/plugins/elementor/"
-                  >Elementor Pro</a
-                >
-              </li>
-              <li><a href="https://www.gravityforms.com/">Gravity Forms</a></li>
-            </ul>
-          </div>
+<section class="experience">
+  <h2>Experience</h2>
 
-          <div class="project">
-            <h3 class="project-title">
-              <a href="https://magazine.vcu.edu/">VCU Magazine</a>
-            </h3>
-            <div class="project-description">
-              <p>
-                Frontend web development for the VCU Magazine, produced by VCU
-                Development and Alumni Relations.
-              </p>
-            </div>
-          </div>
+  <div class="experience-wrap">
+    <div class="experience-item">
+      <h3 class="experience-title">Authentic Brands Group</h3>
+      <p class="experience-meta">New York, NY, Jan 2024 – Current</p>
+      <ul class="experience-description">
+        <li>
+          Shopify Plus theme development for large brand stores (Reebok,
+          Champion, Juicy Couture, Frederick's of Hollywood, DC Shoes, Vince
+          Camuto) using Vue.js, Shopify Liquid, and Node.js.
+        </li>
+        <li>
+          Collaborate with vendors on app performance and theme API/SDK
+          connections, including Klaviyo Profiles API and Fast Simon JavaScript
+          SDK for PLP, PDP, and search.
+        </li>
+      </ul>
+    </div>
+  </div>
 
-          <div class="project">
-            <h3 class="project-title">
-              <a href="https://www.alumnicharity.org/"
-                >Alumni Charity Challenge</a
-              >
-            </h3>
-            <div class="project-description">
-              <p>
-                Web design and development for the VCU RVA GOLD Alumni Charity
-                Challenge, using the Bootstrap framework.
-              </p>
-            </div>
-          </div>
+  <div class="experience-wrap">
+    <div class="experience-item">
+      <h3 class="experience-title">Brandito</h3>
+      <p class="experience-meta">Richmond, VA, Feb 2023 – Nov 2023</p>
+      <ul class="experience-description">
+        <li>
+          Front-end development (HTML, CSS/Sass, JavaScript, PHP) of eight
+          client WordPress websites (from Figma designs), including analytics,
+          performance optimization, and SEO.
+        </li>
+        <li>
+          Development of two Shopify stores, Liquid theme and app integration
+          customizations, and DNS setup.
+        </li>
+        <li>Updates and debugging for two other Shopify stores.</li>
+        <li>
+          Created internal unit intranet with ClickUp to document company and
+          Front-end processes.
+        </li>
+      </ul>
+    </div>
+  </div>
 
-          <div class="project">
-            <h3 class="project-title">
-              <a href="https://bpm.pharmacy.vcu.edu/"
-                >Center for Biomarker Research &amp; Precision Medicine</a
-              >
-            </h3>
-            <div class="project-description">
-              <p>
-                Frontend web development for a VCU School of Pharmacy department
-                website on the Terminalfour (T4) CMS.
-              </p>
-            </div>
-          </div>
+  <div class="experience-wrap">
+    <div class="experience-item">
+      <h3 class="experience-title">Virginia Commonwealth University</h3>
+      <p class="experience-meta">Richmond, VA, Dec 2014 – Feb 2023</p>
+      <ul class="experience-description">
+        <li>
+          Performance optimization, SEO, and web analytics/conversion tracking,
+          using Google Analytics, Looker Studio, Search Console, and Hotjar.
+        </li>
+        <li>Front-end development for multiple VCU departments.</li>
+        <li>
+          Converted 20+ Humanities and Sciences department websites to new
+          university template.
+        </li>
+        <li>
+          Managed 100's of event registration and giving forms, handling $1M+ in
+          donations annually.
+        </li>
+        <li>
+          Ongoing maintenance, debugging, and UX/UI enhancements of 20+
+          websites.
+        </li>
+        <li>Administration of vendor giving platforms.</li>
+        <li>Accessibility subject matter expert for WCAG 2.0 AA compliance.</li>
+        <li>HTML email template builds in Mailchimp.</li>
+        <li>Salesforce Marketing Cloud training.</li>
+        <li>
+          Web project management using Asana, Jira Service Desk, and Trello.
+        </li>
+      </ul>
+    </div>
+  </div>
 
-          <div class="project">
-            <h3 class="project-title">
-              <a href="https://www.support.vcu.edu/give">VCU Giving</a>
-            </h3>
-            <div class="project-description">
-              <p>
-                Frontend web development with the Bootstrap framework. Ongoing
-                maintenance and upgrades.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+  <div class="experience-wrap">
+    <div class="experience-item">
+      <h3 class="experience-title">COLAB</h3>
+      <p class="experience-meta">Richmond, VA, Mar 2013 – Dec 2014</p>
+      <ul class="experience-description">
+        <li>
+          Custom WordPress theme development, including multiple WooCommerce
+          e-commerce stores.
+        </li>
+        <li>
+          Advanced Custom Fields integration for customized admin user
+          experience.
+        </li>
+        <li>
+          Git code versioning, team collaboration, and project documentation
+          using GitHub.
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-      <section class="experience">
-        <h2>Experience</h2>
-
-        <div class="experience-wrap">
-          <div class="experience-item">
-            <h3 class="experience-title">Authentic Brands Group</h3>
-            <p class="experience-meta">New York, NY, Jan 2024 – Current</p>
-            <ul class="experience-description">
-              <li>Shopify Plus theme development for large brand stores (Reebok, Champion, Juicy Couture, Frederick’s of Hollywood, DC Shoes, Vince Camuto) using Vue.js, Shopify Liquid, and Node.js.</li>
-              <li>Collaborate with vendors on app performance and theme API/SDK connections, including Klaviyo Profiles API and Fast Simon JavaScript SDK for PLP, PDP, and search.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="experience-wrap">
-          <div class="experience-item">
-            <h3 class="experience-title">Brandito</h3>
-            <p class="experience-meta">Richmond, VA, Feb 2023 – Nov 2023</p>
-            <ul class="experience-description">
-              <li>Front-end development (HTML, CSS/Sass, JavaScript, PHP) of eight client WordPress websites (from Figma designs), including analytics, performance optimization, and SEO.</li>
-              <li>Development of two Shopify stores, Liquid theme and app integration customizations, and DNS setup.</li>
-              <li>Updates and debugging for two other Shopify stores.</li>
-              <li>Created internal unit intranet with ClickUp to document company and Front-end processes.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="experience-wrap">
-          <div class="experience-item">
-            <h3 class="experience-title">Virginia Commonwealth University</h3>
-            <p class="experience-meta">Richmond, VA, Dec 2014 – Feb 2023</p>
-            <ul class="experience-description">
-              <li>Performance optimization, SEO, and web analytics/conversion tracking, using Google Analytics, Looker Studio, Search Console, and Hotjar.</li>
-              <li>Front-end development for multiple VCU departments.</li>
-              <li>Converted 20+ Humanities and Sciences department websites to new university template.</li>
-              <li>Managed 100’s of event registration and giving forms, handling $1M+ in donations annually.</li>
-              <li>Ongoing maintenance, debugging, and UX/UI enhancements of 20+ websites.</li>
-              <li>Administration of vendor giving platforms.</li>
-              <li>Accessibility subject matter expert for WCAG 2.0 AA compliance.</li>
-              <li>HTML email template builds in Mailchimp.</li>
-              <li>Salesforce Marketing Cloud training.</li>
-              <li>Web project management using Asana, Jira Service Desk, and Trello.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="experience-wrap">
-          <div class="experience-item">
-            <h3 class="experience-title">COLAB</h3>
-            <p class="experience-meta">Richmond, VA, Mar 2013 – Dec 2014</p>
-            <ul class="experience-description">
-              <li>Custom WordPress theme development, including multiple WooCommerce e-commerce stores.</li>
-              <li>Advanced Custom Fields integration for customized admin user experience.</li>
-              <li>Git code versioning, team collaboration, and project documentation using GitHub.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="education">
-        <h2>Education</h2>
-        <div class="education-wrap">
-          <div class="education-item">
-            <h3 class="education-title">Virginia Commonwealth University</h3>
-            <ul>
-              <li>Capital CoLAB Digital Technology Credential (Included classes on Python programming and data science)</li>
-              <li>Bachelor of Fine Arts (B.F.A.), Graphic Design</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-    {% include '_includes/footer.html' %}
-  </body>
-</html>
+<section class="education">
+  <h2>Education</h2>
+  <div class="education-wrap">
+    <div class="education-item">
+      <h3 class="education-title">Virginia Commonwealth University</h3>
+      <ul>
+        <li>
+          Capital CoLAB Digital Technology Credential (Included classes on
+          Python programming and data science)
+        </li>
+        <li>Bachelor of Fine Arts (B.F.A.), Graphic Design</li>
+      </ul>
+    </div>
+  </div>
+</section>
