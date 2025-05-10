@@ -5,8 +5,9 @@
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
-    "start": "eleventy --serve",
-    "build": "eleventy",
+    "start": "NODE_ENV=development eleventy --serve --quiet=false",
+    "dev": "NODE_ENV=development eleventy --serve --quiet=false",
+    "build": "NODE_ENV=production eleventy",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
