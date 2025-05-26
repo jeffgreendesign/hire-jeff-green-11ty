@@ -382,7 +382,7 @@ template {
 
 /* #endregion */
 
-/* Page styles */
+/* Site styles */
 
 :root {
   --green-dark: #007c05;
@@ -399,18 +399,18 @@ body {
   font-weight: 300;
   font-size: 16px;
   border-top: 5px solid var(--green-neon);
+  width: 100%;
 }
 
 @media (min-width: 768px) {
   body {
     padding: 2.5rem 2rem 1rem;
+    width: calc(100% - 4rem);
     display: grid;
     grid-template-areas:
       'header'
       'main'
       'footer';
-    align-content: center;
-    justify-content: space-between;
     font-size: 18px;
   }
 }
@@ -480,6 +480,7 @@ footer {
   display: block;
   width: 100%;
   max-width: 1200px;
+  margin: 0 auto;
 }
 
 header {
