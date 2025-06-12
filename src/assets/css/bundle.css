@@ -397,7 +397,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
     Arial, sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 14px;
   border-top: 5px solid var(--green-neon);
   width: 100%;
 }
@@ -476,7 +476,9 @@ p {
 header,
 main,
 section,
-footer {
+footer,
+article,
+.post {
   display: block;
   width: 100%;
   max-width: 1200px;
@@ -488,7 +490,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0;
-  margin: 0 auto 1rem 0;
+  margin: 0 auto 1rem auto;
 }
 
 header nav ul {
@@ -715,10 +717,10 @@ footer p a:focus {
 }
 
 /* Blog styles */
-.post {
+/* .post {
   max-width: 800px;
   margin: 0 auto;
-}
+} */
 
 .post-header {
   margin-bottom: 2rem;
