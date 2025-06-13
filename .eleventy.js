@@ -1,4 +1,5 @@
-const htmlmin = require('html-minifier');
+'use strict';
+const htmlMinifier = require('html-minifier');
 const CleanCSS = require('clean-css');
 const { DateTime } = require('luxon');
 const fs = require('fs');
@@ -7,6 +8,7 @@ const path = require('path');
 module.exports = function (eleventyConfig) {
   // Watch CSS files for changes - being more explicit with the pattern
   eleventyConfig.addWatchTarget('./src/assets/css/**/*.css');
+  eleventyConfig.addWatchTarget('./src/assets/js/**/*.js');
 
   // Better console output during development
   eleventyConfig.setQuietMode(false);
@@ -14,8 +16,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addTransform('htmlmin', function (content) {
     // Only minify HTML in production
     if (process.env.NODE_ENV === 'production') {
-      if (this.page.outputPath && this.page.outputPath.endsWith('.html')) {
-        let minified = htmlmin.minify(content, {
+      if (this.page?.outputPath && this.page.outputPath.endsWith('.html')) {
+        let minified = htmlMinifier.minify(content, {
           useShortDoctype: true,
           removeComments: true,
           collapseWhitespace: true,
@@ -52,7 +54,6 @@ module.exports = function (eleventyConfig) {
       if (inputPath.includes('bundle.css')) {
         return;
       }
-
       return async () => {
         // Return the content as-is in development, minify in production
         if (process.env.NODE_ENV === 'production') {
@@ -67,7 +68,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addGlobalData('inlineCss', function () {
     const cssPath = path.join(__dirname, 'src/assets/css/bundle.css');
     const css = fs.readFileSync(cssPath, 'utf8');
-
     // Don't minify CSS in development mode to help with debugging
     if (process.env.NODE_ENV === 'production') {
       return new CleanCSS({}).minify(css).styles;
@@ -81,8 +81,12 @@ module.exports = function (eleventyConfig) {
     './src/assets/css/bundle.css': './assets/css/bundle.css',
   });
 
+  // Copy JavaScript files to the output directory
+  eleventyConfig.addPassthroughCopy({
+    'src/assets/js': 'assets/js',
+  });
+
   // Copy other static files
-  eleventyConfig.addPassthroughCopy('src/assets/js');
   eleventyConfig.addPassthroughCopy('src/assets/images');
   eleventyConfig.addPassthroughCopy('src/apple-touch-icon.png');
   eleventyConfig.addPassthroughCopy('src/favicon-32x32.png');
