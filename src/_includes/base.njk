@@ -26,33 +26,56 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000" />
     <meta name="msapplication-TileColor" content="#24ff2d" />
     <meta name="theme-color" content="#ffffff" />
+    
+    {# Preconnect to font domains #}
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    {# Preload critical fonts #}
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
+      as="style"
+    />
     <link
       rel="preload"
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,500;1,800&display=swap"
       as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
     />
+    
+    {# Load fonts with font-display: swap #}
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap&font-display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,500;1,800&display=swap&font-display=swap"
+      rel="stylesheet"
+    />
+    
     <noscript>
       <link
         rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,500;1,800&display=swap"
       />
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
+      />
     </noscript>
     
-    {# Load CSS as external file for proper hot reloading #}
-    <link rel="stylesheet" href="/assets/css/bundle.css">
-    
-    {# 
-    Alternatively, you can still use inline CSS if needed for production:
+    {# Inline critical CSS in production, load as external file in development #}
     {% if env.NODE_ENV == "production" %}
     <style>
       {{ inlineCss | safe }}
     </style>
+    {% else %}
+    <link rel="stylesheet" href="/assets/css/bundle.css">
     {% endif %}
-    #}
+    
     <script src="/assets/js/theme.js" defer></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver" defer></script>
+    <script src="/assets/js/main.js" defer></script>
   </head>
   <body>
     {% include "header.njk" %}
